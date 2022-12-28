@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Simple notification api</title>
+  </head>
+  <body>
+    <h1>Notification API</h1>
+
+    <form id="form-todo">
+      <input
+        type="text"
+        id="input-title"
+        name="input-title"
+        placeholder="Add task"
+        autocomplete="off" />
+      <textarea
+        name="input-description"
+        id="input-description"
+        cols="30"
+        rows="3"
+        placeholder="Add description"></textarea>
+      <input
+        type="datetime-local"
+        name="input-date"
+        id="input-date" />
+      <button id="btn-add">Add</button>
+    </form>
+
+    <main>
+      <section class="todos-list"></section>
+
+      <template id="todo-template">
+        <article class="todo">
+          <h3 class="todo-title"></h3>
+          <p class="todo-description"></p>
+          <p class="todo-date"></p>
+          <button class="btn-delete"></button>
+          <hr />
+        </article>
+      </template>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
